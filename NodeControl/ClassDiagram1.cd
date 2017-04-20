@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NodeControl.NodeFactory" Collapsed="true">
+    <Position X="1.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Factories\NodeFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.NodeDiagram" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEGoAAAQACwAAICAFASBKBACFBIBEAiDJgFAAAICACA=</HashCode>
+      <FileName>NodeDiagram.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeTool" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Nodes" />
+      <Property Name="Factories" />
+      <Property Name="SelectedObjects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NodeControl.Nodes.ConditionNode" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAQAAAAAgABAAQAQAAAAAABAAAAAAAAAAAwAAA=</HashCode>
+      <FileName>Objects\Nodes\ConditionNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="LinksTo" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NodeControl.Nodes.Condition" Collapsed="true">
+    <Position X="5.25" Y="6.75" Width="1.5" />
+    <AssociationLine Name="LinksTo" Type="NodeControl.Nodes.Node" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="6.938" />
+        <Point X="5" Y="6.938" />
+        <Point X="5" Y="4.91" />
+        <Point X="6.75" Y="4.91" />
+        <Point X="6.75" Y="4.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Objects\Nodes\ConditionNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LinksTo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NodeControl.Nodes.ConditionMouseDownInfo" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Nodes\ConditionNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.Nodes.Node" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <AssociationLine Name="parent" Type="NodeControl.NodeDiagram" FixedToPoint="true">
+      <Path>
+        <Point X="6.875" Y="4.25" />
+        <Point X="6.875" Y="2.691" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAkAAQQAAAgEwBgACSQUQAAAEABAEAAAkBACwAgAEA=</HashCode>
+      <FileName>Objects\Nodes\Node.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="parent" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ParentNodes" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NodeControl.Nodes.MouseDownInfo" Collapsed="true">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Nodes\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.Nodes.TextNode">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <Members>
+      <Field Name="linksTo" Hidden="true" />
+    </Members>
+    <AssociationLine Name="LinksTo" Type="NodeControl.Nodes.Node" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.656" Y="5.5" />
+        <Point X="8.656" Y="4.5" />
+        <Point X="8" Y="4.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAABAAQAQQAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Objects\Nodes\TextNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="linksTo" />
+      <Property Name="LinksTo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NodeControl.Tools.CreateLinkTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAgAAAAAAAEBAAAAQABAAAAAAIAAAAAACAAA=</HashCode>
+      <FileName>Tools\CreateLinkTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.Factories.ConditionNodeFactory" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\ConditionNodeFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.Factories.TextNodeFactory" Collapsed="true">
+    <Position X="2.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\TextNodeFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.NodeEditor.ConditionNodeEditor" Collapsed="true">
+    <Position X="18" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAAAAAAAGAAIACAAAAAkEAACAAAAAAACA=</HashCode>
+      <FileName>NodeEditor\ConditionNodeEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.NodeEditor.TextNodeEditor" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAAAAAAAGAAIACAAAAAkAAAAAAAAAAACA=</HashCode>
+      <FileName>NodeEditor\TextNodeEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.Tools.DragTool" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAIAAAAAAEBAIAAQABAAAAAAIIgAAAECAAE=</HashCode>
+      <FileName>Tools\DragTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeControl.Tools.Tool" Collapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAABAAAAAABAAAAAAIAAAAAACAAA=</HashCode>
+      <FileName>Tools\Tool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="NodeControl.Link" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAAAAAAAAAAAAAAAgAAAAIAAAAAAEAAAABAAA=</HashCode>
+      <FileName>Objects\Link.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Interface Name="NodeControl.INodeObject" Collapsed="true">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\INodeObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NodeControl.ITool" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAABAAAAAAIAAAAAACAAA=</HashCode>
+      <FileName>Tools\ITool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
